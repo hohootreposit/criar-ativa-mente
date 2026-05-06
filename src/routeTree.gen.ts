@@ -9,8 +9,62 @@
 // Additionally, you should also exclude this file from your linter and/or formatter to prevent it from being checked or modified.
 
 import { Route as rootRouteImport } from './routes/__root'
+import { Route as TransparenciaRouteImport } from './routes/transparencia'
+import { Route as SolucoesRouteImport } from './routes/solucoes'
+import { Route as QuemSomosRouteImport } from './routes/quem-somos'
+import { Route as ParceriasRouteImport } from './routes/parcerias'
+import { Route as MetodologiaRouteImport } from './routes/metodologia'
+import { Route as ImpactoRouteImport } from './routes/impacto'
+import { Route as EscolasPrefeiturasRouteImport } from './routes/escolas-prefeituras'
+import { Route as ConteudosRouteImport } from './routes/conteudos'
+import { Route as ContatoRouteImport } from './routes/contato'
 import { Route as IndexRouteImport } from './routes/index'
 
+const TransparenciaRoute = TransparenciaRouteImport.update({
+  id: '/transparencia',
+  path: '/transparencia',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const SolucoesRoute = SolucoesRouteImport.update({
+  id: '/solucoes',
+  path: '/solucoes',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const QuemSomosRoute = QuemSomosRouteImport.update({
+  id: '/quem-somos',
+  path: '/quem-somos',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const ParceriasRoute = ParceriasRouteImport.update({
+  id: '/parcerias',
+  path: '/parcerias',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const MetodologiaRoute = MetodologiaRouteImport.update({
+  id: '/metodologia',
+  path: '/metodologia',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const ImpactoRoute = ImpactoRouteImport.update({
+  id: '/impacto',
+  path: '/impacto',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const EscolasPrefeiturasRoute = EscolasPrefeiturasRouteImport.update({
+  id: '/escolas-prefeituras',
+  path: '/escolas-prefeituras',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const ConteudosRoute = ConteudosRouteImport.update({
+  id: '/conteudos',
+  path: '/conteudos',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const ContatoRoute = ContatoRouteImport.update({
+  id: '/contato',
+  path: '/contato',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const IndexRoute = IndexRouteImport.update({
   id: '/',
   path: '/',
@@ -19,28 +73,158 @@ const IndexRoute = IndexRouteImport.update({
 
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
+  '/contato': typeof ContatoRoute
+  '/conteudos': typeof ConteudosRoute
+  '/escolas-prefeituras': typeof EscolasPrefeiturasRoute
+  '/impacto': typeof ImpactoRoute
+  '/metodologia': typeof MetodologiaRoute
+  '/parcerias': typeof ParceriasRoute
+  '/quem-somos': typeof QuemSomosRoute
+  '/solucoes': typeof SolucoesRoute
+  '/transparencia': typeof TransparenciaRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
+  '/contato': typeof ContatoRoute
+  '/conteudos': typeof ConteudosRoute
+  '/escolas-prefeituras': typeof EscolasPrefeiturasRoute
+  '/impacto': typeof ImpactoRoute
+  '/metodologia': typeof MetodologiaRoute
+  '/parcerias': typeof ParceriasRoute
+  '/quem-somos': typeof QuemSomosRoute
+  '/solucoes': typeof SolucoesRoute
+  '/transparencia': typeof TransparenciaRoute
 }
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
   '/': typeof IndexRoute
+  '/contato': typeof ContatoRoute
+  '/conteudos': typeof ConteudosRoute
+  '/escolas-prefeituras': typeof EscolasPrefeiturasRoute
+  '/impacto': typeof ImpactoRoute
+  '/metodologia': typeof MetodologiaRoute
+  '/parcerias': typeof ParceriasRoute
+  '/quem-somos': typeof QuemSomosRoute
+  '/solucoes': typeof SolucoesRoute
+  '/transparencia': typeof TransparenciaRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
-  fullPaths: '/'
+  fullPaths:
+    | '/'
+    | '/contato'
+    | '/conteudos'
+    | '/escolas-prefeituras'
+    | '/impacto'
+    | '/metodologia'
+    | '/parcerias'
+    | '/quem-somos'
+    | '/solucoes'
+    | '/transparencia'
   fileRoutesByTo: FileRoutesByTo
-  to: '/'
-  id: '__root__' | '/'
+  to:
+    | '/'
+    | '/contato'
+    | '/conteudos'
+    | '/escolas-prefeituras'
+    | '/impacto'
+    | '/metodologia'
+    | '/parcerias'
+    | '/quem-somos'
+    | '/solucoes'
+    | '/transparencia'
+  id:
+    | '__root__'
+    | '/'
+    | '/contato'
+    | '/conteudos'
+    | '/escolas-prefeituras'
+    | '/impacto'
+    | '/metodologia'
+    | '/parcerias'
+    | '/quem-somos'
+    | '/solucoes'
+    | '/transparencia'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
+  ContatoRoute: typeof ContatoRoute
+  ConteudosRoute: typeof ConteudosRoute
+  EscolasPrefeiturasRoute: typeof EscolasPrefeiturasRoute
+  ImpactoRoute: typeof ImpactoRoute
+  MetodologiaRoute: typeof MetodologiaRoute
+  ParceriasRoute: typeof ParceriasRoute
+  QuemSomosRoute: typeof QuemSomosRoute
+  SolucoesRoute: typeof SolucoesRoute
+  TransparenciaRoute: typeof TransparenciaRoute
 }
 
 declare module '@tanstack/react-router' {
   interface FileRoutesByPath {
+    '/transparencia': {
+      id: '/transparencia'
+      path: '/transparencia'
+      fullPath: '/transparencia'
+      preLoaderRoute: typeof TransparenciaRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/solucoes': {
+      id: '/solucoes'
+      path: '/solucoes'
+      fullPath: '/solucoes'
+      preLoaderRoute: typeof SolucoesRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/quem-somos': {
+      id: '/quem-somos'
+      path: '/quem-somos'
+      fullPath: '/quem-somos'
+      preLoaderRoute: typeof QuemSomosRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/parcerias': {
+      id: '/parcerias'
+      path: '/parcerias'
+      fullPath: '/parcerias'
+      preLoaderRoute: typeof ParceriasRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/metodologia': {
+      id: '/metodologia'
+      path: '/metodologia'
+      fullPath: '/metodologia'
+      preLoaderRoute: typeof MetodologiaRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/impacto': {
+      id: '/impacto'
+      path: '/impacto'
+      fullPath: '/impacto'
+      preLoaderRoute: typeof ImpactoRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/escolas-prefeituras': {
+      id: '/escolas-prefeituras'
+      path: '/escolas-prefeituras'
+      fullPath: '/escolas-prefeituras'
+      preLoaderRoute: typeof EscolasPrefeiturasRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/conteudos': {
+      id: '/conteudos'
+      path: '/conteudos'
+      fullPath: '/conteudos'
+      preLoaderRoute: typeof ConteudosRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/contato': {
+      id: '/contato'
+      path: '/contato'
+      fullPath: '/contato'
+      preLoaderRoute: typeof ContatoRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/': {
       id: '/'
       path: '/'
@@ -53,6 +237,15 @@ declare module '@tanstack/react-router' {
 
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
+  ContatoRoute: ContatoRoute,
+  ConteudosRoute: ConteudosRoute,
+  EscolasPrefeiturasRoute: EscolasPrefeiturasRoute,
+  ImpactoRoute: ImpactoRoute,
+  MetodologiaRoute: MetodologiaRoute,
+  ParceriasRoute: ParceriasRoute,
+  QuemSomosRoute: QuemSomosRoute,
+  SolucoesRoute: SolucoesRoute,
+  TransparenciaRoute: TransparenciaRoute,
 }
 export const routeTree = rootRouteImport
   ._addFileChildren(rootRouteChildren)
