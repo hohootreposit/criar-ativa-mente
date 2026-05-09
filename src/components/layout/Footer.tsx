@@ -1,8 +1,9 @@
 import { Link } from "@tanstack/react-router";
-import { Sparkles, Mail, Phone, MapPin, Instagram, Linkedin, Youtube } from "lucide-react";
+import { Mail, Phone, MapPin, Instagram, Linkedin, Youtube } from "lucide-react";
 import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
 import { toast } from "sonner";
+import logo from "@/assets/logo.png";
 
 export function Footer() {
   return (
@@ -10,9 +11,7 @@ export function Footer() {
       <div className="mx-auto grid max-w-7xl gap-12 px-4 py-16 sm:px-6 lg:grid-cols-4 lg:px-8">
         <div className="lg:col-span-1">
           <Link to="/" className="flex items-center gap-2 font-display text-lg font-bold">
-            <span className="grid h-8 w-8 place-items-center rounded-lg gradient-hero text-primary-foreground">
-              <Sparkles className="h-4 w-4" />
-            </span>
+            <img src={logo} alt="EducaImpacto" className="h-10 w-10 object-contain" />
             EducaImpacto
           </Link>
           <p className="mt-4 text-sm text-muted-foreground">
