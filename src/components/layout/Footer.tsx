@@ -11,11 +11,11 @@ export function Footer() {
       <div className="mx-auto grid max-w-7xl gap-12 px-4 py-16 sm:px-6 lg:grid-cols-4 lg:px-8">
         <div className="lg:col-span-1">
           <Link to="/" className="flex items-center gap-2 font-display text-lg font-bold">
-            <img src={logo} alt="EducaImpacto" className="h-10 w-10 object-contain" />
-            EducaImpacto
+            <img src={logo} alt="Instituto Criar Ativa Mente" className="h-10 w-10 object-contain" />
+            Instituto Criar Ativa Mente
           </Link>
           <p className="mt-4 text-sm text-muted-foreground">
-            Educação acessível, inovadora e baseada em evidências para transformar realidades.
+            Transformando educação, desenvolvimento humano e impacto social em experiências reais.
           </p>
           <div className="mt-6 flex gap-3">
             {[Instagram, Linkedin, Youtube].map((Icon, i) => (
