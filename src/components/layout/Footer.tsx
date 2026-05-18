@@ -49,9 +49,9 @@ export function Footer() {
         <div>
           <h3 className="font-display text-sm font-semibold">Contato</h3>
           <ul className="mt-4 space-y-3 text-sm text-muted-foreground">
-            <li className="flex items-center gap-2"><Mail className="h-4 w-4" /> contato@educaimpacto.org</li>
-            <li className="flex items-center gap-2"><Phone className="h-4 w-4" /> +55 (11) 0000-0000</li>
-            <li className="flex items-start gap-2"><MapPin className="mt-0.5 h-4 w-4" /> São Paulo, Brasil</li>
+            <li className="flex items-center gap-2"><Mail className="h-4 w-4" /> contato@institutocriarativamente.org.br</li>
+            <li className="flex items-center gap-2"><Phone className="h-4 w-4" /> (XX) XXXX-XXXX</li>
+            <li className="flex items-start gap-2"><MapPin className="mt-0.5 h-4 w-4" /> Brasil</li>
           </ul>
           <form
             onSubmit={(e) => { e.preventDefault(); toast.success("Inscrição recebida!"); }}
