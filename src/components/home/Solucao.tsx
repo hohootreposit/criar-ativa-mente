@@ -1,12 +1,13 @@
-import { Gamepad2, BookOpen, GraduationCap, MonitorSmartphone, ArrowRight } from "lucide-react";
+import { Coins, BookOpen, GraduationCap, HeartHandshake, Users, ArrowRight } from "lucide-react";
 import { Link } from "@tanstack/react-router";
 import { SectionHeading } from "@/components/ui/SectionHeading";
 
 const cards = [
-  { icon: Gamepad2, title: "Trilhas educacionais gamificadas", text: "Jornadas de aprendizagem com desafios, missões e recompensas alinhadas à BNCC." },
-  { icon: BookOpen, title: "Conteúdos impressos e digitais", text: "Materiais multimodais que ampliam o acesso e respeitam diferentes contextos." },
-  { icon: GraduationCap, title: "Formação docente continuada", text: "Trilhas formativas e mentorias para professores e gestores escolares." },
-  { icon: MonitorSmartphone, title: "Plataformas interativas", text: "Tecnologia educacional acessível com monitoramento de aprendizagem em tempo real." },
+  { icon: Coins, title: "Educação Financeira e Empreendedora", text: "Projetos voltados à autonomia, planejamento financeiro, protagonismo juvenil e cultura empreendedora." },
+  { icon: BookOpen, title: "Leitura e Desenvolvimento Cognitivo", text: "Coleções, revistas e programas de incentivo à leitura com abordagens lúdicas, acessíveis e multiformato." },
+  { icon: GraduationCap, title: "Formação Docente", text: "Capacitações, oficinas e trilhas formativas em metodologias ativas, tecnologia educacional e inovação pedagógica." },
+  { icon: HeartHandshake, title: "Projetos Socioemocionais", text: "Programas sobre emoções, convivência, cidadania, respeito às diferenças, bullying e cultura de paz." },
+  { icon: Users, title: "Inclusão e Impacto Social", text: "Ações de desenvolvimento comunitário, acessibilidade, fortalecimento de vínculos e inclusão social." },
 ];
 
 export function Solucao() {
