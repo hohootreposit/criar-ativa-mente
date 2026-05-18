@@ -1,4 +1,14 @@
-import { StatCounter } from "@/components/ui/StatCounter";
+import { CheckCircle2 } from "lucide-react";
+
+const items = [
+  "Melhoria do desempenho escolar",
+  "Fortalecimento das competências socioemocionais",
+  "Ampliação do acesso à leitura e à cultura",
+  "Formação continuada de educadores",
+  "Desenvolvimento da autonomia e do protagonismo juvenil",
+  "Inclusão educacional e social",
+  "Engajamento de famílias e comunidades",
+];
 
 export function Impacto() {
   return (
@@ -11,17 +21,20 @@ export function Impacto() {
             Impacto
           </span>
           <h2 className="mt-4 font-display text-3xl font-bold sm:text-4xl md:text-5xl">
-            Transformando vidas em todo o Brasil
+            Aprendizado, oportunidades e transformação
           </h2>
           <p className="mt-4 text-base opacity-90 sm:text-lg">
-            Resultados construídos junto a redes públicas, parceiros e comunidades educadoras.
+            Nosso trabalho gera impacto educacional e social fortalecendo o aprendizado e promovendo transformação nas comunidades atendidas.
           </p>
         </div>
-        <div className="mt-14 grid gap-12 sm:grid-cols-3">
-          <StatCounter end={350000} label="Alunos atendidos" />
-          <StatCounter end={1200} label="Escolas impactadas" />
-          <StatCounter end={8500} label="Professores formados" />
-        </div>
+        <ul className="mx-auto mt-14 grid max-w-5xl gap-4 sm:grid-cols-2">
+          {items.map((it) => (
+            <li key={it} className="flex items-start gap-3 rounded-2xl border border-white/20 bg-white/10 p-5 backdrop-blur">
+              <CheckCircle2 className="mt-0.5 h-5 w-5 shrink-0" />
+              <span className="text-sm sm:text-base">{it}</span>
+            </li>
+          ))}
+        </ul>
       </div>
     </section>
   );
