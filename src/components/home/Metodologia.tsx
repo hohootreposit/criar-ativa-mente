@@ -24,7 +24,7 @@ export function Metodologia() {
               <div className="relative mx-auto grid h-12 w-12 place-items-center rounded-full gradient-hero text-primary-foreground shadow-soft">
                 <s.icon className="h-5 w-5" />
               </div>
-              <div className="mt-3 text-xs font-semibold uppercase tracking-wider text-primary">Etapa 0{i + 1}</div>
+              <div className="mt-3 text-xs font-semibold uppercase tracking-wider text-primary">Pilar 0{i + 1}</div>
               <h3 className="mt-1 font-display text-lg font-semibold">{s.title}</h3>
               <p className="mt-2 text-sm text-muted-foreground">{s.text}</p>
             </div>
