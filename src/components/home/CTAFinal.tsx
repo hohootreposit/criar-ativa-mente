@@ -2,9 +2,9 @@ import { Link } from "@tanstack/react-router";
 import { Heart, Handshake, Users, ArrowRight } from "lucide-react";
 
 const options = [
-  { icon: Heart, title: "Doação", text: "Contribuições pontuais ou recorrentes que sustentam programas educacionais.", to: "/contato" },
-  { icon: Handshake, title: "Parceria institucional", text: "Empresas, fundações e governos que escalam impacto educacional conosco.", to: "/parcerias" },
-  { icon: Users, title: "Voluntariado", text: "Doe tempo e talento em mentorias, conteúdos e projetos com escolas.", to: "/contato" },
+  { icon: Handshake, title: "Parceria institucional", text: "Desenvolva projetos com escolas, redes públicas, instituições e comunidades.", to: "/parcerias" },
+  { icon: Heart, title: "Apoie esta causa", text: "Apoie iniciativas educacionais e sociais que transformam futuros.", to: "/contato" },
+  { icon: Users, title: "Conheça os projetos", text: "Fale com nosso time para conhecer nossas soluções e programas.", to: "/contato" },
 ];
 
 export function CTAFinal() {
