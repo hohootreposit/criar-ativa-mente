@@ -12,13 +12,13 @@ export function Hero() {
       <div className="relative mx-auto grid max-w-7xl gap-12 px-4 py-20 sm:px-6 sm:py-28 lg:grid-cols-12 lg:px-8 lg:py-32">
         <div className="lg:col-span-7 animate-fade-in-up">
           <span className="inline-flex items-center gap-2 rounded-full border border-primary/20 bg-background/70 px-3 py-1 text-xs font-semibold uppercase tracking-wider text-primary backdrop-blur">
-            <span className="h-1.5 w-1.5 rounded-full bg-primary" /> ONG · Educação básica
+            <span className="h-1.5 w-1.5 rounded-full bg-primary" /> Instituto Criar Ativa Mente
           </span>
           <h1 className="mt-6 font-display text-4xl font-bold leading-[1.05] tracking-tight sm:text-5xl md:text-6xl lg:text-7xl">
-            Educação <span className="gradient-text">acessível</span>, inovadora e baseada em evidências para transformar realidades.
+            Transformando <span className="gradient-text">educação</span>, desenvolvimento humano e impacto social em experiências reais.
           </h1>
           <p className="mt-6 max-w-2xl text-lg text-muted-foreground">
-            Desenvolvemos soluções educacionais gamificadas, conteúdos multimodais e formação docente para ampliar o engajamento e melhorar os resultados de aprendizagem na educação básica.
+            Desenvolvemos soluções educacionais, sociais e tecnológicas voltadas para escolas, redes públicas, instituições e comunidades — unindo aprendizagem, inovação, inclusão, formação cidadã e competências para o século XXI.
           </p>
           <div className="mt-8 flex flex-wrap gap-3">
             <Button asChild size="lg" className="gradient-hero text-primary-foreground border-0 shadow-elegant hover:opacity-90">
