@@ -68,9 +68,9 @@ function Page() {
           </form>
 
           <div className="mt-12 grid gap-6 sm:grid-cols-3">
-            <div className="flex items-start gap-3"><Mail className="h-5 w-5 text-primary" /><div><div className="font-semibold">E-mail</div><div className="text-sm text-muted-foreground">contato@educaimpacto.org</div></div></div>
-            <div className="flex items-start gap-3"><Phone className="h-5 w-5 text-primary" /><div><div className="font-semibold">Telefone</div><div className="text-sm text-muted-foreground">+55 (11) 0000-0000</div></div></div>
-            <div className="flex items-start gap-3"><MapPin className="h-5 w-5 text-primary" /><div><div className="font-semibold">Endereço</div><div className="text-sm text-muted-foreground">São Paulo, Brasil</div></div></div>
+            <div className="flex items-start gap-3"><Mail className="h-5 w-5 text-primary" /><div><div className="font-semibold">E-mail</div><div className="text-sm text-muted-foreground">contato@institutocriarativamente.org.br</div></div></div>
+            <div className="flex items-start gap-3"><Phone className="h-5 w-5 text-primary" /><div><div className="font-semibold">Telefone</div><div className="text-sm text-muted-foreground">(XX) XXXX-XXXX</div></div></div>
+            <div className="flex items-start gap-3"><MapPin className="h-5 w-5 text-primary" /><div><div className="font-semibold">Apoie</div><div className="text-sm text-muted-foreground">Educar também é transformar futuros.</div></div></div>
           </div>
         </div>
       </section>
