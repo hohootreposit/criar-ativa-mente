@@ -16,10 +16,10 @@ export function CTAFinal() {
       <div className="relative mx-auto max-w-7xl px-4 text-primary-foreground sm:px-6 lg:px-8">
         <div className="mx-auto max-w-3xl text-center">
           <h2 className="font-display text-3xl font-bold sm:text-4xl md:text-5xl">
-            Junte-se a nós para transformar a educação brasileira
+            Faça parte desta transformação
           </h2>
           <p className="mt-4 text-base opacity-90 sm:text-lg">
-            Há muitas formas de fazer parte. Escolha a que mais combina com você ou sua organização.
+            Entre em contato para conhecer nossos projetos, desenvolver parcerias institucionais ou apoiar iniciativas educacionais e sociais.
           </p>
         </div>
         <div className="mt-14 grid gap-6 md:grid-cols-3">
