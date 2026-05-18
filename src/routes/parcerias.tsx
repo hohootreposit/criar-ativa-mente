@@ -1,39 +1,39 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { PageHero } from "@/components/ui/PageHero";
-import { Building2, School, Briefcase, Landmark } from "lucide-react";
+import { Building2, School, Briefcase, Landmark, GraduationCap, Users } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 export const Route = createFileRoute("/parcerias")({
   head: () => ({
     meta: [
-      { title: "Parcerias — EducaImpacto" },
-      { name: "description", content: "Governo, escolas, empresas e instituições que escalam impacto educacional conosco." },
-      { property: "og:title", content: "Parcerias — EducaImpacto" },
-      { property: "og:description", content: "Tipos de parceria e como sua organização pode somar conosco." },
+      { title: "Parcerias — Instituto Criar Ativa Mente" },
+      { name: "description", content: "Construímos parcerias com instituições públicas, escolas, empresas, universidades, organizações sociais e profissionais comprometidos com a educação." },
+      { property: "og:title", content: "Parcerias — Instituto Criar Ativa Mente" },
+      { property: "og:description", content: "Transformações relevantes acontecem de forma colaborativa." },
     ],
   }),
   component: Page,
 });
 
 const tipos = [
-  { icon: Landmark, title: "Governo", text: "Convênios e termos de fomento com municípios e estados." },
+  { icon: Landmark, title: "Instituições públicas", text: "Atuação conjunta com órgãos públicos para ampliar o alcance da educação." },
   { icon: School, title: "Escolas", text: "Implementação direta em redes públicas e privadas." },
-  { icon: Briefcase, title: "Empresas", text: "Investimento social privado e parcerias estratégicas." },
-  { icon: Building2, title: "Instituições", text: "Fundações, universidades e organizações da sociedade civil." },
+  { icon: Briefcase, title: "Empresas", text: "Parcerias estratégicas e investimento social privado." },
+  { icon: GraduationCap, title: "Universidades", text: "Pesquisa, extensão e produção de conhecimento." },
+  { icon: Building2, title: "Organizações sociais", text: "Articulação com a sociedade civil e iniciativas comunitárias." },
+  { icon: Users, title: "Profissionais", text: "Colaboradores comprometidos com a educação e o desenvolvimento humano." },
 ];
-
-const partners = ["Ministério da Educação", "UNESCO Brasil", "Instituto Lumen", "Fundação Saber", "RedePública+", "EdTech Hub", "Aliança pela Infância", "Fundo Equidade"];
 
 function Page() {
   return (
     <>
       <PageHero
         eyebrow="Parcerias"
-        title={<>Construímos <span className="gradient-text">juntos</span></>}
-        description="Acreditamos que o impacto em escala só é possível com colaboração entre setores."
+        title={<>Transformações <span className="gradient-text">colaborativas</span></>}
+        description="Acreditamos na força da colaboração para ampliar oportunidades, desenvolver soluções inovadoras e gerar impacto social sustentável."
       />
       <section className="bg-background py-20">
-        <div className="mx-auto grid max-w-7xl gap-6 px-4 sm:grid-cols-2 sm:px-6 lg:grid-cols-4 lg:px-8">
+        <div className="mx-auto grid max-w-7xl gap-6 px-4 sm:grid-cols-2 sm:px-6 lg:grid-cols-3 lg:px-8">
           {tipos.map((t) => (
             <div key={t.title} className="rounded-2xl border border-border bg-card p-7 shadow-card hover-lift">
               <div className="grid h-12 w-12 place-items-center rounded-xl gradient-hero text-primary-foreground"><t.icon className="h-5 w-5" /></div>
@@ -45,18 +45,12 @@ function Page() {
       </section>
 
       <section className="bg-secondary/30 py-20">
-        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-          <h2 className="font-display text-3xl font-bold sm:text-4xl">Quem caminha conosco</h2>
-          <div className="mt-10 grid grid-cols-2 gap-px overflow-hidden rounded-2xl border border-border bg-border sm:grid-cols-4">
-            {partners.map((p) => (
-              <div key={p} className="grid h-24 place-items-center bg-card px-4 text-center font-display text-sm font-semibold text-muted-foreground">{p}</div>
-            ))}
-          </div>
-          <div className="mt-12 text-center">
-            <Button asChild size="lg" className="gradient-hero text-primary-foreground border-0">
-              <Link to="/contato">Seja um parceiro</Link>
-            </Button>
-          </div>
+        <div className="mx-auto max-w-3xl px-4 text-center sm:px-6 lg:px-8">
+          <h2 className="font-display text-3xl font-bold sm:text-4xl">Vamos construir juntos?</h2>
+          <p className="mt-4 text-muted-foreground">Se sua instituição deseja desenvolver projetos conosco, entre em contato.</p>
+          <Button asChild size="lg" className="mt-8 gradient-hero text-primary-foreground border-0">
+            <Link to="/contato">Seja um parceiro</Link>
+          </Button>
         </div>
       </section>
     </>
