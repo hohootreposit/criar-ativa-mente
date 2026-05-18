@@ -11,10 +11,10 @@ import { CTAFinal } from "@/components/home/CTAFinal";
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "EducaImpacto — Educação que transforma realidades" },
-      { name: "description", content: "Educação acessível, inovadora e baseada em evidências. Soluções gamificadas, conteúdos multimodais e formação docente para a educação básica." },
-      { property: "og:title", content: "EducaImpacto — Educação que transforma realidades" },
-      { property: "og:description", content: "Tecnologia, pedagogia e impacto social a serviço da educação básica brasileira." },
+      { title: "Instituto Criar Ativa Mente — Educação, desenvolvimento humano e impacto social" },
+      { name: "description", content: "Transformando educação, desenvolvimento humano e impacto social em experiências reais. Soluções para escolas, redes públicas, instituições e comunidades." },
+      { property: "og:title", content: "Instituto Criar Ativa Mente" },
+      { property: "og:description", content: "Educação, cultura, tecnologia, leitura, empreendedorismo, saúde emocional e transformação social." },
     ],
   }),
   component: Index,

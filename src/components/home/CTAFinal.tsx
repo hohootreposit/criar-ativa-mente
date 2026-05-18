@@ -2,9 +2,9 @@ import { Link } from "@tanstack/react-router";
 import { Heart, Handshake, Users, ArrowRight } from "lucide-react";
 
 const options = [
-  { icon: Heart, title: "Doação", text: "Contribuições pontuais ou recorrentes que sustentam programas educacionais.", to: "/contato" },
-  { icon: Handshake, title: "Parceria institucional", text: "Empresas, fundações e governos que escalam impacto educacional conosco.", to: "/parcerias" },
-  { icon: Users, title: "Voluntariado", text: "Doe tempo e talento em mentorias, conteúdos e projetos com escolas.", to: "/contato" },
+  { icon: Handshake, title: "Parceria institucional", text: "Desenvolva projetos com escolas, redes públicas, instituições e comunidades.", to: "/parcerias" },
+  { icon: Heart, title: "Apoie esta causa", text: "Apoie iniciativas educacionais e sociais que transformam futuros.", to: "/contato" },
+  { icon: Users, title: "Conheça os projetos", text: "Fale com nosso time para conhecer nossas soluções e programas.", to: "/contato" },
 ];
 
 export function CTAFinal() {
@@ -16,10 +16,10 @@ export function CTAFinal() {
       <div className="relative mx-auto max-w-7xl px-4 text-primary-foreground sm:px-6 lg:px-8">
         <div className="mx-auto max-w-3xl text-center">
           <h2 className="font-display text-3xl font-bold sm:text-4xl md:text-5xl">
-            Junte-se a nós para transformar a educação brasileira
+            Faça parte desta transformação
           </h2>
           <p className="mt-4 text-base opacity-90 sm:text-lg">
-            Há muitas formas de fazer parte. Escolha a que mais combina com você ou sua organização.
+            Entre em contato para conhecer nossos projetos, desenvolver parcerias institucionais ou apoiar iniciativas educacionais e sociais.
           </p>
         </div>
         <div className="mt-14 grid gap-6 md:grid-cols-3">

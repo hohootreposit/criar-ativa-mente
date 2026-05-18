@@ -1,14 +1,13 @@
 import { SectionHeading } from "@/components/ui/SectionHeading";
+import { Landmark, School, Briefcase, GraduationCap, Building2, Users } from "lucide-react";
 
 const partners = [
-  "Ministério da Educação",
-  "UNESCO Brasil",
-  "Instituto Lumen",
-  "Fundação Saber",
-  "RedePública+",
-  "EdTech Hub",
-  "Aliança pela Infância",
-  "Fundo Equidade",
+  { icon: Landmark, label: "Instituições públicas" },
+  { icon: School, label: "Escolas" },
+  { icon: Briefcase, label: "Empresas" },
+  { icon: GraduationCap, label: "Universidades" },
+  { icon: Building2, label: "Organizações sociais" },
+  { icon: Users, label: "Profissionais" },
 ];
 
 export function Parceiros() {
@@ -16,14 +15,17 @@ export function Parceiros() {
     <section className="bg-background py-20 sm:py-24">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <SectionHeading
-          eyebrow="Parceiros"
-          title="Construímos juntos"
-          description="Governo, escolas, empresas e instituições que acreditam na educação como motor de transformação."
+          eyebrow="Parcerias"
+          title="Transformações relevantes acontecem de forma colaborativa"
+          description="Construímos parcerias com instituições públicas, escolas, empresas, universidades, organizações sociais e profissionais comprometidos com a educação e o desenvolvimento humano."
         />
-        <div className="mt-12 grid grid-cols-2 gap-px overflow-hidden rounded-2xl border border-border bg-border sm:grid-cols-3 lg:grid-cols-4">
+        <div className="mt-12 grid grid-cols-2 gap-4 sm:grid-cols-3 lg:grid-cols-6">
           {partners.map((p) => (
-            <div key={p} className="grid h-24 place-items-center bg-card px-4 text-center font-display text-sm font-semibold text-muted-foreground transition-colors hover:bg-secondary hover:text-foreground">
-              {p}
+            <div key={p.label} className="flex flex-col items-center gap-3 rounded-2xl border border-border bg-card p-6 text-center transition-colors hover:bg-secondary">
+              <div className="grid h-12 w-12 place-items-center rounded-xl bg-primary/10 text-primary">
+                <p.icon className="h-5 w-5" />
+              </div>
+              <div className="font-display text-sm font-semibold">{p.label}</div>
             </div>
           ))}
         </div>

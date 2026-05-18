@@ -10,29 +10,29 @@ import { toast } from "sonner";
 export const Route = createFileRoute("/contato")({
   head: () => ({
     meta: [
-      { title: "Apoie / Contato — EducaImpacto" },
-      { name: "description", content: "Apoie a EducaImpacto: doação, parceria institucional ou voluntariado. Fale com a nossa equipe." },
-      { property: "og:title", content: "Apoie / Contato — EducaImpacto" },
-      { property: "og:description", content: "Faça parte de uma iniciativa que transforma a educação básica brasileira." },
+      { title: "Contato / Apoie — Instituto Criar Ativa Mente" },
+      { name: "description", content: "Faça parte desta transformação. Entre em contato para conhecer projetos, desenvolver parcerias ou apoiar iniciativas educacionais e sociais." },
+      { property: "og:title", content: "Contato / Apoie — Instituto Criar Ativa Mente" },
+      { property: "og:description", content: "Educar também é transformar futuros." },
     ],
   }),
   component: Page,
 });
 
 const opcoes = [
-  { icon: Heart, key: "doacao", title: "Doação", text: "Contribuições pontuais ou recorrentes." },
-  { icon: Handshake, key: "parceria", title: "Parceria", text: "Empresas, fundações e governos." },
-  { icon: Users, key: "voluntariado", title: "Voluntariado", text: "Mentorias, conteúdos e projetos." },
+  { icon: Heart, key: "apoio", title: "Apoio institucional", text: "Apoie iniciativas educacionais e sociais." },
+  { icon: Handshake, key: "parceria", title: "Parceria", text: "Desenvolva projetos conosco." },
+  { icon: Users, key: "contato", title: "Conheça os projetos", text: "Saiba mais sobre nossa atuação." },
 ];
 
 function Page() {
-  const [tipo, setTipo] = useState<string>("doacao");
+  const [tipo, setTipo] = useState<string>("apoio");
   return (
     <>
       <PageHero
-        eyebrow="Apoie / Contato"
-        title={<>Faça parte da <span className="gradient-text">transformação</span></>}
-        description="Há muitas formas de apoiar. Escolha a que mais combina com você ou sua organização."
+        eyebrow="Contato / Apoie"
+        title={<>Faça parte desta <span className="gradient-text">transformação</span></>}
+        description="O apoio de parceiros, instituições e colaboradores fortalece ações que impactam estudantes, educadores e comunidades. Educar também é transformar futuros."
       />
       <section className="bg-background py-20">
         <div className="mx-auto max-w-5xl px-4 sm:px-6 lg:px-8">
@@ -68,9 +68,9 @@ function Page() {
           </form>
 
           <div className="mt-12 grid gap-6 sm:grid-cols-3">
-            <div className="flex items-start gap-3"><Mail className="h-5 w-5 text-primary" /><div><div className="font-semibold">E-mail</div><div className="text-sm text-muted-foreground">contato@educaimpacto.org</div></div></div>
-            <div className="flex items-start gap-3"><Phone className="h-5 w-5 text-primary" /><div><div className="font-semibold">Telefone</div><div className="text-sm text-muted-foreground">+55 (11) 0000-0000</div></div></div>
-            <div className="flex items-start gap-3"><MapPin className="h-5 w-5 text-primary" /><div><div className="font-semibold">Endereço</div><div className="text-sm text-muted-foreground">São Paulo, Brasil</div></div></div>
+            <div className="flex items-start gap-3"><Mail className="h-5 w-5 text-primary" /><div><div className="font-semibold">E-mail</div><div className="text-sm text-muted-foreground">contato@institutocriarativamente.org.br</div></div></div>
+            <div className="flex items-start gap-3"><Phone className="h-5 w-5 text-primary" /><div><div className="font-semibold">Telefone</div><div className="text-sm text-muted-foreground">(XX) XXXX-XXXX</div></div></div>
+            <div className="flex items-start gap-3"><MapPin className="h-5 w-5 text-primary" /><div><div className="font-semibold">Apoie</div><div className="text-sm text-muted-foreground">Educar também é transformar futuros.</div></div></div>
           </div>
         </div>
       </section>

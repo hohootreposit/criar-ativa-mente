@@ -3,9 +3,9 @@ import { ArrowRight, Target, Eye, Heart } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 const blocks = [
-  { icon: Target, title: "Missão", text: "Promover o acesso à educação de qualidade por meio de soluções inovadoras, inclusivas e baseadas em evidências." },
-  { icon: Eye, title: "Visão", text: "Ser referência nacional em inovação educacional com impacto social escalável." },
-  { icon: Heart, title: "Valores", text: "Equidade · Inovação pedagógica · Transparência · Impacto mensurável · Inclusão." },
+  { icon: Target, title: "Missão", text: "Promover transformação social e educacional por meio de experiências de aprendizagem inovadoras, inclusivas e humanizadas." },
+  { icon: Eye, title: "Visão", text: "Ser referência nacional em soluções educacionais e projetos de impacto social voltados ao desenvolvimento humano e à inovação pedagógica." },
+  { icon: Heart, title: "Valores", text: "Inclusão · Ética · Inovação · Compromisso social · Educação transformadora · Sustentabilidade · Valorização humana." },
 ];
 
 export function QuemSomosPreview() {
@@ -17,13 +17,13 @@ export function QuemSomosPreview() {
             Quem Somos
           </span>
           <h2 className="mt-4 font-display text-3xl font-bold tracking-tight sm:text-4xl md:text-5xl">
-            Uma organização da sociedade civil dedicada à <span className="gradient-text">educação que transforma</span>.
+            Comprometidos com o <span className="gradient-text">desenvolvimento educacional, social e humano</span>.
           </h2>
           <p className="mt-6 text-base text-muted-foreground sm:text-lg">
-            Combinamos tecnologia, gamificação e metodologias ativas para melhorar a aprendizagem e a permanência escolar de estudantes da educação básica.
+            Atuamos com metodologias inovadoras, projetos interdisciplinares e soluções acessíveis para escolas públicas e privadas, secretarias de educação, organizações sociais e iniciativas comunitárias.
           </p>
           <Button asChild className="mt-8 gradient-hero text-primary-foreground border-0">
-            <Link to="/quem-somos">Conheça nossa história <ArrowRight className="ml-1 h-4 w-4" /></Link>
+            <Link to="/quem-somos">Conheça o Instituto <ArrowRight className="ml-1 h-4 w-4" /></Link>
           </Button>
         </div>
         <div className="grid gap-4">

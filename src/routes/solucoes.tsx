@@ -1,36 +1,35 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { PageHero } from "@/components/ui/PageHero";
-import { Gamepad2, BookOpen, GraduationCap, MonitorSmartphone, BarChart3, Sparkles } from "lucide-react";
+import { Coins, BookOpen, GraduationCap, HeartHandshake, Users } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 export const Route = createFileRoute("/solucoes")({
   head: () => ({
     meta: [
-      { title: "Soluções e Programas — EducaImpacto" },
-      { name: "description", content: "Trilhas gamificadas, conteúdos multimodais, formação docente e plataformas para monitoramento de aprendizagem." },
-      { property: "og:title", content: "Soluções e Programas — EducaImpacto" },
-      { property: "og:description", content: "Programas educacionais que integram tecnologia, pedagogia e impacto social." },
+      { title: "Soluções e Programas — Instituto Criar Ativa Mente" },
+      { name: "description", content: "Programas educacionais e sociais integrados: educação financeira, leitura, formação docente, socioemocional e inclusão." },
+      { property: "og:title", content: "Soluções e Programas — Instituto Criar Ativa Mente" },
+      { property: "og:description", content: "Soluções adaptáveis às necessidades de cada território, rede de ensino ou instituição." },
     ],
   }),
   component: Page,
 });
 
 const items = [
-  { icon: Gamepad2, title: "Trilhas gamificadas", text: "Jornadas com desafios, missões e recompensas alinhadas à BNCC." },
-  { icon: BookOpen, title: "Conteúdos multimodais", text: "Materiais impressos e digitais que ampliam o acesso." },
-  { icon: GraduationCap, title: "Formação docente", text: "Trilhas formativas, mentorias e comunidades de prática." },
-  { icon: MonitorSmartphone, title: "Plataformas interativas", text: "Tecnologia educacional acessível e engajadora." },
-  { icon: BarChart3, title: "Monitoramento de aprendizagem", text: "Dashboards com indicadores claros e acionáveis." },
-  { icon: Sparkles, title: "Engajamento do aluno", text: "Estratégias para motivação, pertencimento e protagonismo." },
+  { icon: Coins, title: "Educação Financeira e Empreendedora", text: "Projetos voltados ao desenvolvimento da autonomia, planejamento financeiro, protagonismo juvenil e cultura empreendedora." },
+  { icon: BookOpen, title: "Leitura e Desenvolvimento Cognitivo", text: "Coleções, revistas e programas de incentivo à leitura com abordagens lúdicas, acessíveis e multiformato." },
+  { icon: GraduationCap, title: "Formação Docente", text: "Capacitações, oficinas e trilhas formativas voltadas para metodologias ativas, tecnologia educacional, inclusão e inovação pedagógica." },
+  { icon: HeartHandshake, title: "Projetos Socioemocionais", text: "Programas sobre emoções, convivência, cidadania, respeito às diferenças, bullying e cultura de paz." },
+  { icon: Users, title: "Inclusão e Impacto Social", text: "Ações voltadas para desenvolvimento comunitário, acessibilidade, fortalecimento de vínculos e inclusão social." },
 ];
 
 function Page() {
   return (
     <>
       <PageHero
-        eyebrow="Soluções"
-        title={<>Programas que integram <span className="gradient-text">tecnologia e pedagogia</span></>}
-        description="Soluções desenhadas com escolas e validadas em campo, prontas para escalar em redes públicas e privadas."
+        eyebrow="Soluções / Programas"
+        title={<>Programas <span className="gradient-text">integrados</span> e adaptáveis</>}
+        description="Desenvolvemos programas educacionais e sociais adaptáveis às necessidades de cada território, rede de ensino ou instituição."
       />
       <section className="bg-background py-20">
         <div className="mx-auto grid max-w-7xl gap-6 px-4 sm:grid-cols-2 sm:px-6 lg:grid-cols-3 lg:px-8">

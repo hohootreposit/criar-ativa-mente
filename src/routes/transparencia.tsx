@@ -1,24 +1,24 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { PageHero } from "@/components/ui/PageHero";
-import { FileText, Download, ShieldCheck, Scale, Users } from "lucide-react";
+import { ShieldCheck, FileText, Scale, HeartHandshake } from "lucide-react";
 
 export const Route = createFileRoute("/transparencia")({
   head: () => ({
     meta: [
-      { title: "Transparência — EducaImpacto" },
-      { name: "description", content: "Estatuto, relatórios de atividades, prestação de contas e parceiros. Compromisso com a transparência institucional." },
-      { property: "og:title", content: "Transparência — EducaImpacto" },
-      { property: "og:description", content: "Documentos institucionais, relatórios e prestação de contas." },
+      { title: "Transparência — Instituto Criar Ativa Mente" },
+      { name: "description", content: "Compromisso com ética, responsabilidade e gestão transparente. Documentos institucionais e prestação de contas." },
+      { property: "og:title", content: "Transparência — Instituto Criar Ativa Mente" },
+      { property: "og:description", content: "Responsabilidade institucional e respeito às boas práticas de governança." },
     ],
   }),
   component: Page,
 });
 
-const docs = [
-  { icon: Scale, title: "Estatuto Social", desc: "Documento jurídico fundador da organização." },
-  { icon: FileText, title: "Relatório de Atividades 2024", desc: "Resultados, programas e parcerias do último ano." },
-  { icon: ShieldCheck, title: "Prestação de Contas 2024", desc: "Demonstrações financeiras auditadas." },
-  { icon: Users, title: "Lista de Parceiros", desc: "Organizações que apoiam nossas iniciativas." },
+const pilares = [
+  { icon: Scale, title: "Ética", text: "Respeito às boas práticas de governança em toda a nossa atuação." },
+  { icon: ShieldCheck, title: "Responsabilidade", text: "Responsabilidade institucional e compromisso social em cada projeto." },
+  { icon: FileText, title: "Prestação de contas", text: "Disponibilizamos informações, documentos, relatórios e materiais institucionais." },
+  { icon: HeartHandshake, title: "Confiança", text: "Relações baseadas em confiança, integridade e impacto positivo." },
 ];
 
 function Page() {
@@ -26,25 +26,25 @@ function Page() {
     <>
       <PageHero
         eyebrow="Transparência"
-        title={<>Compromisso com a <span className="gradient-text">prestação de contas</span></>}
-        description="Acreditamos que confiança se constrói com clareza. Nossos documentos institucionais estão disponíveis publicamente."
+        title={<>Compromisso com a <span className="gradient-text">gestão transparente</span></>}
+        description="O Instituto Criar Ativa Mente atua com responsabilidade institucional, compromisso social e respeito às boas práticas de governança."
       />
       <section className="bg-background py-20">
-        <div className="mx-auto grid max-w-7xl gap-6 px-4 sm:grid-cols-2 sm:px-6 lg:px-8">
-          {docs.map((d) => (
-            <a key={d.title} href="#" className="flex items-center justify-between gap-6 rounded-2xl border border-border bg-card p-6 shadow-card hover-lift">
-              <div className="flex items-center gap-4">
-                <div className="grid h-12 w-12 shrink-0 place-items-center rounded-xl bg-primary/10 text-primary">
-                  <d.icon className="h-5 w-5" />
+        <div className="mx-auto max-w-5xl px-4 sm:px-6 lg:px-8">
+          <p className="text-muted-foreground sm:text-lg">
+            Nesta seção disponibilizamos informações institucionais, documentos, relatórios e materiais relacionados à transparência e à prestação de contas. Nosso compromisso é fortalecer relações baseadas em confiança, integridade e impacto positivo.
+          </p>
+          <div className="mt-12 grid gap-6 sm:grid-cols-2">
+            {pilares.map((p) => (
+              <div key={p.title} className="rounded-2xl border border-border bg-card p-6 shadow-card hover-lift">
+                <div className="grid h-12 w-12 place-items-center rounded-xl bg-primary/10 text-primary">
+                  <p.icon className="h-5 w-5" />
                 </div>
-                <div>
-                  <h3 className="font-display text-lg font-semibold">{d.title}</h3>
-                  <p className="text-sm text-muted-foreground">{d.desc}</p>
-                </div>
+                <h3 className="mt-4 font-display text-lg font-semibold">{p.title}</h3>
+                <p className="mt-2 text-sm text-muted-foreground">{p.text}</p>
               </div>
-              <Download className="h-5 w-5 shrink-0 text-muted-foreground" />
-            </a>
-          ))}
+            ))}
+          </div>
         </div>
       </section>
     </>

@@ -9,9 +9,9 @@ import { toast } from "sonner";
 export const Route = createFileRoute("/escolas-prefeituras")({
   head: () => ({
     meta: [
-      { title: "Para Escolas e Prefeituras — EducaImpacto" },
+      { title: "Para Escolas e Prefeituras — Instituto Criar Ativa Mente" },
       { name: "description", content: "Como implementar soluções educacionais com aderência à BNCC em redes públicas. Convênios, editais e parcerias." },
-      { property: "og:title", content: "Para Escolas e Prefeituras — EducaImpacto" },
+      { property: "og:title", content: "Para Escolas e Prefeituras — Instituto Criar Ativa Mente" },
       { property: "og:description", content: "Modelo de contratação, benefícios e adequação à BNCC para redes públicas." },
     ],
   }),
