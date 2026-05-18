@@ -2,9 +2,9 @@ import { AlertTriangle, BookX, Frown } from "lucide-react";
 import { SectionHeading } from "@/components/ui/SectionHeading";
 
 const items = [
-  { icon: BookX, stat: "60%", title: "Baixa proficiência", text: "dos estudantes da educação básica não atingem nível adequado em leitura e matemática." },
-  { icon: Frown, stat: "1 em 4", title: "Desmotivação escolar", text: "alunos relatam falta de interesse e propósito nas atividades de sala de aula." },
-  { icon: AlertTriangle, stat: "70%", title: "Acesso limitado", text: "das redes públicas têm pouco acesso a metodologias inovadoras e formação continuada." },
+  { icon: BookX, stat: "Educação", title: "Aprendizagem ativa", text: "Valorizamos a aprendizagem ativa, a inclusão e a formação integral dos estudantes." },
+  { icon: Frown, stat: "Acesso", title: "Democratização", text: "Promovemos a democratização do acesso ao conhecimento em escolas e comunidades." },
+  { icon: AlertTriangle, stat: "Futuro", title: "Competências", text: "Preparamos estudantes para os desafios sociais, culturais e profissionais do futuro." },
 ];
 
 export function Problema() {
@@ -12,9 +12,9 @@ export function Problema() {
     <section className="bg-background py-20 sm:py-28">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <SectionHeading
-          eyebrow="O Problema"
-          title="A educação brasileira enfrenta desafios urgentes"
-          description="Milhões de estudantes ainda não têm acesso a oportunidades reais de aprender com qualidade, engajamento e propósito."
+          eyebrow="Nosso compromisso"
+          title="Educar é ampliar possibilidades"
+          description="Acreditamos que educar é fortalecer vínculos e criar caminhos para um futuro mais humano, criativo e sustentável."
         />
         <div className="mt-14 grid gap-6 md:grid-cols-3">
           {items.map((it) => (
