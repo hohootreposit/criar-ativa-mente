@@ -23,8 +23,8 @@ export function Header() {
     <header className="sticky top-0 z-50 w-full border-b border-border/40 bg-background/80 backdrop-blur-lg">
       <div className="mx-auto flex h-16 max-w-7xl items-center justify-between px-4 sm:px-6 lg:px-8">
         <Link to="/" className="flex items-center gap-2 font-display text-lg font-bold">
-          <img src={logo} alt="Instituto Criar Ativa Mente" className="h-10 w-10 object-contain" />
-          <span>Instituto Criar Ativa Mente</span>
+          <img src={logo} alt="Instituto CriarAtivaMente" className="h-10 w-10 object-contain" />
+          <span>Instituto CriarAtivaMente</span>
         </Link>
 
         <nav className="hidden items-center gap-1 xl:flex">

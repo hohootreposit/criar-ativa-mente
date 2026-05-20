@@ -64,9 +64,9 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "Instituto Criar Ativa Mente — Educação, desenvolvimento humano e impacto social" },
+      { title: "Instituto CriarAtivaMente — Educação, desenvolvimento humano e impacto social" },
       { name: "description", content: "Soluções educacionais, sociais e tecnológicas para escolas, redes públicas, instituições e comunidades." },
-      { property: "og:title", content: "Instituto Criar Ativa Mente" },
+      { property: "og:title", content: "Instituto CriarAtivaMente" },
       { property: "og:description", content: "Transformando educação, desenvolvimento humano e impacto social em experiências reais." },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },

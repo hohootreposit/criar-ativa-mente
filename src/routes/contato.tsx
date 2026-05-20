@@ -10,9 +10,9 @@ import { toast } from "sonner";
 export const Route = createFileRoute("/contato")({
   head: () => ({
     meta: [
-      { title: "Contato / Apoie — Instituto Criar Ativa Mente" },
+      { title: "Contato / Apoie — Instituto CriarAtivaMente" },
       { name: "description", content: "Faça parte desta transformação. Entre em contato para conhecer projetos, desenvolver parcerias ou apoiar iniciativas educacionais e sociais." },
-      { property: "og:title", content: "Contato / Apoie — Instituto Criar Ativa Mente" },
+      { property: "og:title", content: "Contato / Apoie — Instituto CriarAtivaMente" },
       { property: "og:description", content: "Educar também é transformar futuros." },
     ],
   }),

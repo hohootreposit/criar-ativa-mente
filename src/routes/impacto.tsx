@@ -5,9 +5,9 @@ import { CheckCircle2 } from "lucide-react";
 export const Route = createFileRoute("/impacto")({
   head: () => ({
     meta: [
-      { title: "Impacto — Instituto Criar Ativa Mente" },
+      { title: "Impacto — Instituto CriarAtivaMente" },
       { name: "description", content: "Impacto educacional e social: aprendizado, oportunidades e transformação nas comunidades atendidas." },
-      { property: "og:title", content: "Impacto — Instituto Criar Ativa Mente" },
+      { property: "og:title", content: "Impacto — Instituto CriarAtivaMente" },
       { property: "og:description", content: "Resultados concretos, participação ativa e construção coletiva em cada projeto." },
     ],
   }),

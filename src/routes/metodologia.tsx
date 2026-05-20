@@ -5,9 +5,9 @@ import { Users, Layers, Compass, HeartHandshake, Accessibility } from "lucide-re
 export const Route = createFileRoute("/metodologia")({
   head: () => ({
     meta: [
-      { title: "Metodologia — Instituto Criar Ativa Mente" },
+      { title: "Metodologia — Instituto CriarAtivaMente" },
       { name: "description", content: "Inovação pedagógica, aprendizagem ativa e desenvolvimento humano: protagonismo, interdisciplinaridade, projetos, inclusão e socioemocional." },
-      { property: "og:title", content: "Metodologia — Instituto Criar Ativa Mente" },
+      { property: "og:title", content: "Metodologia — Instituto CriarAtivaMente" },
       { property: "og:description", content: "Aprendizagem significativa, participativa e conectada à realidade dos estudantes." },
     ],
   }),
