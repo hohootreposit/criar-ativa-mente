@@ -17,7 +17,7 @@ export function Hero() {
           <h1 className="mt-6 font-display text-4xl font-bold leading-[1.05] tracking-tight sm:text-5xl md:text-6xl lg:text-7xl">
             Transformando <span className="gradient-text">educação</span>, desenvolvimento humano e impacto social em experiências reais.
           </h1>
-          <p className="mt-6 max-w-2xl text-lg text-muted-foreground">
+          <p className="mt-6 max-w-2xl text-base text-muted-foreground">
             Desenvolvemos soluções educacionais, sociais e tecnológicas voltadas para escolas, redes públicas, instituições e comunidades — unindo aprendizagem, inovação, inclusão, formação cidadã e competências para o século XXI.
           </p>
           <div className="mt-8 flex flex-wrap gap-3">
