@@ -21,18 +21,18 @@ export function Header() {
   const [open, setOpen] = useState(false);
   return (
     <header className="sticky top-0 z-50 w-full border-b border-border/40 bg-background/80 backdrop-blur-lg">
-      <div className="mx-auto flex h-16 max-w-7xl items-center justify-between px-4 sm:px-6 lg:px-8">
-        <Link to="/" className="flex items-center gap-2 font-display text-lg font-bold">
-          <img src={logo} alt="Instituto CriarAtivaMente" className="h-10 w-10 object-contain" />
-          <span>Instituto CriarAtivaMente</span>
+      <div className="mx-auto flex h-16 max-w-7xl items-center justify-between gap-4 px-4 sm:px-6 lg:px-8">
+        <Link to="/" className="flex shrink-0 items-center gap-2 font-display text-base font-bold">
+          <img src={logo} alt="Instituto CriarAtivaMente" className="h-9 w-9 object-contain" />
+          <span className="whitespace-nowrap">Instituto CriarAtivaMente</span>
         </Link>
 
-        <nav className="hidden items-center gap-1 xl:flex">
+        <nav className="hidden flex-1 items-center justify-end gap-0.5 lg:flex">
           {navItems.map((it) => (
             <Link
               key={it.to}
               to={it.to}
-              className="rounded-md px-3 py-2 text-sm font-medium text-muted-foreground transition-colors hover:bg-secondary hover:text-foreground"
+              className="whitespace-nowrap rounded-md px-2 py-2 text-[13px] font-medium text-muted-foreground transition-colors hover:bg-secondary hover:text-foreground"
               activeProps={{ className: "text-foreground bg-secondary" }}
             >
               {it.label}
@@ -40,13 +40,13 @@ export function Header() {
           ))}
         </nav>
 
-        <div className="flex items-center gap-2">
+        <div className="flex shrink-0 items-center gap-2">
           <Button asChild variant="default" className="hidden sm:inline-flex gradient-hero text-primary-foreground border-0 shadow-soft hover:opacity-90">
             <Link to="/contato">Apoie</Link>
           </Button>
           <Sheet open={open} onOpenChange={setOpen}>
             <SheetTrigger asChild>
-              <Button variant="ghost" size="icon" className="xl:hidden" aria-label="Abrir menu">
+              <Button variant="ghost" size="icon" className="lg:hidden" aria-label="Abrir menu">
                 <Menu className="h-5 w-5" />
               </Button>
             </SheetTrigger>

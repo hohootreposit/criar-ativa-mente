@@ -40,63 +40,65 @@
 :root {
   --radius: 0.875rem;
 
-  --background: oklch(1 0 0);
-  --foreground: oklch(0.18 0.03 285);
+  --background: oklch(0.995 0.005 230);
+  --foreground: oklch(0.25 0.04 240);
 
   --card: oklch(1 0 0);
-  --card-foreground: oklch(0.18 0.03 285);
+  --card-foreground: oklch(0.25 0.04 240);
   --popover: oklch(1 0 0);
-  --popover-foreground: oklch(0.18 0.03 285);
+  --popover-foreground: oklch(0.25 0.04 240);
 
-  /* Lilás vibrante */
-  --primary: oklch(0.55 0.22 295);
-  --primary-foreground: oklch(0.99 0 0);
-  --primary-glow: oklch(0.78 0.16 305);
+  /* Azul pastel — confiança, conhecimento, serenidade */
+  --primary: oklch(0.72 0.11 235);
+  --primary-foreground: oklch(0.22 0.05 240);
+  --primary-glow: oklch(0.86 0.08 195);
 
-  --secondary: oklch(0.97 0.015 295);
-  --secondary-foreground: oklch(0.25 0.06 290);
+  --secondary: oklch(0.96 0.02 220);
+  --secondary-foreground: oklch(0.3 0.06 240);
 
-  --muted: oklch(0.97 0.01 285);
-  --muted-foreground: oklch(0.5 0.03 285);
+  --muted: oklch(0.965 0.012 220);
+  --muted-foreground: oklch(0.5 0.03 235);
 
-  --accent: oklch(0.95 0.04 300);
-  --accent-foreground: oklch(0.3 0.1 295);
+  /* Verde menta — crescimento, futuro, esperança */
+  --accent: oklch(0.92 0.06 165);
+  --accent-foreground: oklch(0.3 0.08 175);
 
-  --destructive: oklch(0.6 0.22 25);
+  --destructive: oklch(0.72 0.14 30);
   --destructive-foreground: oklch(0.99 0 0);
 
-  --border: oklch(0.92 0.01 285);
-  --input: oklch(0.92 0.01 285);
-  --ring: oklch(0.55 0.22 295);
+  --border: oklch(0.92 0.015 220);
+  --input: oklch(0.92 0.015 220);
+  --ring: oklch(0.72 0.11 235);
 
-  --gradient-hero: linear-gradient(135deg, oklch(0.55 0.22 295) 0%, oklch(0.65 0.2 320) 50%, oklch(0.78 0.16 305) 100%);
-  --gradient-soft: linear-gradient(180deg, oklch(0.99 0.005 295) 0%, oklch(0.96 0.025 295) 100%);
-  --gradient-glow: radial-gradient(circle at 50% 0%, color-mix(in oklab, var(--primary) 20%, transparent), transparent 60%);
+  /* Pêssego suave — acolhimento e criatividade no glow */
+  --gradient-hero: linear-gradient(135deg, oklch(0.82 0.09 235) 0%, oklch(0.88 0.08 195) 45%, oklch(0.9 0.07 165) 100%);
+  --gradient-soft: linear-gradient(180deg, oklch(0.99 0.008 225) 0%, oklch(0.95 0.03 200) 100%);
+  --gradient-glow: radial-gradient(circle at 50% 0%, color-mix(in oklab, var(--primary) 18%, transparent), transparent 60%);
 
-  --shadow-elegant: 0 20px 50px -20px color-mix(in oklab, var(--primary) 35%, transparent);
-  --shadow-soft: 0 10px 30px -15px color-mix(in oklab, var(--primary) 20%, transparent);
-  --shadow-card: 0 4px 20px -8px oklch(0 0 0 / 0.08);
+  --shadow-elegant: 0 20px 50px -20px color-mix(in oklab, var(--primary) 30%, transparent);
+  --shadow-soft: 0 10px 30px -15px color-mix(in oklab, var(--primary) 18%, transparent);
+  --shadow-card: 0 4px 20px -8px oklch(0 0 0 / 0.06);
 }
 
 .dark {
-  --background: oklch(0.14 0.02 285);
-  --foreground: oklch(0.98 0 0);
-  --card: oklch(0.18 0.03 285);
-  --card-foreground: oklch(0.98 0 0);
-  --popover: oklch(0.18 0.03 285);
-  --popover-foreground: oklch(0.98 0 0);
-  --primary: oklch(0.72 0.2 300);
-  --primary-foreground: oklch(0.15 0.03 285);
-  --primary-glow: oklch(0.82 0.14 305);
-  --secondary: oklch(0.25 0.04 290);
-  --secondary-foreground: oklch(0.98 0 0);
-  --muted: oklch(0.22 0.03 285);
-  --muted-foreground: oklch(0.7 0.02 285);
-  --accent: oklch(0.28 0.08 295);
-  --accent-foreground: oklch(0.98 0 0);
+  --background: oklch(0.2 0.03 240);
+  --foreground: oklch(0.97 0.01 220);
+  --card: oklch(0.24 0.035 240);
+  --card-foreground: oklch(0.97 0.01 220);
+  --popover: oklch(0.24 0.035 240);
+  --popover-foreground: oklch(0.97 0.01 220);
+  --primary: oklch(0.8 0.1 220);
+  --primary-foreground: oklch(0.2 0.04 240);
+  --primary-glow: oklch(0.88 0.08 180);
+  --secondary: oklch(0.3 0.04 235);
+  --secondary-foreground: oklch(0.97 0.01 220);
+  --muted: oklch(0.28 0.03 235);
+  --muted-foreground: oklch(0.75 0.02 225);
+  --accent: oklch(0.4 0.08 170);
+  --accent-foreground: oklch(0.97 0.01 220);
   --border: oklch(1 0 0 / 10%);
   --input: oklch(1 0 0 / 12%);
-  --ring: oklch(0.72 0.2 300);
+  --ring: oklch(0.8 0.1 220);
 }
 
 @layer base {
