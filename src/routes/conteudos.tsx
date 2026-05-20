@@ -5,9 +5,9 @@ import { BookOpen, Lightbulb, Baby, Library, Smile, Cpu, Accessibility, Graduati
 export const Route = createFileRoute("/conteudos")({
   head: () => ({
     meta: [
-      { title: "Conteúdos — Instituto Criar Ativa Mente" },
+      { title: "Conteúdos — Instituto CriarAtivaMente" },
       { name: "description", content: "Conhecimento, inovação e inspiração para educadores, estudantes e famílias." },
-      { property: "og:title", content: "Conteúdos — Instituto Criar Ativa Mente" },
+      { property: "og:title", content: "Conteúdos — Instituto CriarAtivaMente" },
       { property: "og:description", content: "Conteúdos sobre educação, inovação pedagógica, leitura, socioemocional, tecnologia, inclusão, formação docente, cultura e cidadania." },
     ],
   }),

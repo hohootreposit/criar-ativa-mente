@@ -5,9 +5,9 @@ import { ShieldCheck, FileText, Scale, HeartHandshake } from "lucide-react";
 export const Route = createFileRoute("/transparencia")({
   head: () => ({
     meta: [
-      { title: "Transparência — Instituto Criar Ativa Mente" },
+      { title: "Transparência — Instituto CriarAtivaMente" },
       { name: "description", content: "Compromisso com ética, responsabilidade e gestão transparente. Documentos institucionais e prestação de contas." },
-      { property: "og:title", content: "Transparência — Instituto Criar Ativa Mente" },
+      { property: "og:title", content: "Transparência — Instituto CriarAtivaMente" },
       { property: "og:description", content: "Responsabilidade institucional e respeito às boas práticas de governança." },
     ],
   }),
@@ -27,7 +27,7 @@ function Page() {
       <PageHero
         eyebrow="Transparência"
         title={<>Compromisso com a <span className="gradient-text">gestão transparente</span></>}
-        description="O Instituto Criar Ativa Mente atua com responsabilidade institucional, compromisso social e respeito às boas práticas de governança."
+        description="O Instituto CriarAtivaMente atua com responsabilidade institucional, compromisso social e respeito às boas práticas de governança."
       />
       <section className="bg-background py-20">
         <div className="mx-auto max-w-5xl px-4 sm:px-6 lg:px-8">

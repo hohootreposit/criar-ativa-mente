@@ -6,9 +6,9 @@ import { Button } from "@/components/ui/button";
 export const Route = createFileRoute("/parcerias")({
   head: () => ({
     meta: [
-      { title: "Parcerias — Instituto Criar Ativa Mente" },
+      { title: "Parcerias — Instituto CriarAtivaMente" },
       { name: "description", content: "Construímos parcerias com instituições públicas, escolas, empresas, universidades, organizações sociais e profissionais comprometidos com a educação." },
-      { property: "og:title", content: "Parcerias — Instituto Criar Ativa Mente" },
+      { property: "og:title", content: "Parcerias — Instituto CriarAtivaMente" },
       { property: "og:description", content: "Transformações relevantes acontecem de forma colaborativa." },
     ],
   }),

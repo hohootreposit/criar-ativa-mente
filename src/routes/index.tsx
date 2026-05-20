@@ -11,9 +11,9 @@ import { CTAFinal } from "@/components/home/CTAFinal";
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "Instituto Criar Ativa Mente — Educação, desenvolvimento humano e impacto social" },
+      { title: "Instituto CriarAtivaMente — Educação, desenvolvimento humano e impacto social" },
       { name: "description", content: "Transformando educação, desenvolvimento humano e impacto social em experiências reais. Soluções para escolas, redes públicas, instituições e comunidades." },
-      { property: "og:title", content: "Instituto Criar Ativa Mente" },
+      { property: "og:title", content: "Instituto CriarAtivaMente" },
       { property: "og:description", content: "Educação, cultura, tecnologia, leitura, empreendedorismo, saúde emocional e transformação social." },
     ],
   }),

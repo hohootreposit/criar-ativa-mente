@@ -6,10 +6,10 @@ import { Button } from "@/components/ui/button";
 export const Route = createFileRoute("/quem-somos")({
   head: () => ({
     meta: [
-      { title: "Quem Somos — Instituto Criar Ativa Mente" },
+      { title: "Quem Somos — Instituto CriarAtivaMente" },
       { name: "description", content: "Organização comprometida com o desenvolvimento educacional, social e humano por meio de metodologias inovadoras e projetos interdisciplinares." },
-      { property: "og:title", content: "Quem Somos — Instituto Criar Ativa Mente" },
-      { property: "og:description", content: "Missão, visão e valores do Instituto Criar Ativa Mente." },
+      { property: "og:title", content: "Quem Somos — Instituto CriarAtivaMente" },
+      { property: "og:description", content: "Missão, visão e valores do Instituto CriarAtivaMente." },
     ],
   }),
   component: Page,

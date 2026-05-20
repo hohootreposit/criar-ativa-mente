@@ -6,9 +6,9 @@ import { Button } from "@/components/ui/button";
 export const Route = createFileRoute("/solucoes")({
   head: () => ({
     meta: [
-      { title: "Soluções e Programas — Instituto Criar Ativa Mente" },
+      { title: "Soluções e Programas — Instituto CriarAtivaMente" },
       { name: "description", content: "Programas educacionais e sociais integrados: educação financeira, leitura, formação docente, socioemocional e inclusão." },
-      { property: "og:title", content: "Soluções e Programas — Instituto Criar Ativa Mente" },
+      { property: "og:title", content: "Soluções e Programas — Instituto CriarAtivaMente" },
       { property: "og:description", content: "Soluções adaptáveis às necessidades de cada território, rede de ensino ou instituição." },
     ],
   }),
