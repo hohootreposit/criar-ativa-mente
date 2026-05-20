@@ -22,7 +22,7 @@ export function PageHero({ eyebrow, title, description, children }: Props) {
           {title}
         </h1>
         {description && (
-          <p className="mt-6 max-w-2xl text-lg text-muted-foreground">{description}</p>
+          <p className="mt-6 max-w-2xl text-base text-muted-foreground">{description}</p>
         )}
         {children && <div className="mt-8">{children}</div>}
       </div>
