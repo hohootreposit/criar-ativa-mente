@@ -23,7 +23,7 @@ export function Impacto() {
           <h2 className="mt-4 font-display text-3xl font-bold sm:text-4xl md:text-5xl">
             Aprendizado, oportunidades e transformação
           </h2>
-          <p className="mt-4 text-base opacity-90 sm:text-lg">
+          <p className="mt-4 text-base opacity-90">
             Nosso trabalho gera impacto educacional e social fortalecendo o aprendizado e promovendo transformação nas comunidades atendidas.
           </p>
         </div>

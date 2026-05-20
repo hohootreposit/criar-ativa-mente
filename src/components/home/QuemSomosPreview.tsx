@@ -19,7 +19,7 @@ export function QuemSomosPreview() {
           <h2 className="mt-4 font-display text-3xl font-bold tracking-tight sm:text-4xl md:text-5xl">
             Comprometidos com o <span className="gradient-text">desenvolvimento educacional, social e humano</span>.
           </h2>
-          <p className="mt-6 text-base text-muted-foreground sm:text-lg">
+          <p className="mt-6 text-base text-muted-foreground">
             Atuamos com metodologias inovadoras, projetos interdisciplinares e soluções acessíveis para escolas públicas e privadas, secretarias de educação, organizações sociais e iniciativas comunitárias.
           </p>
           <Button asChild className="mt-8 gradient-hero text-primary-foreground border-0">

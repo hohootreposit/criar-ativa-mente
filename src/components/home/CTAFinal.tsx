@@ -18,7 +18,7 @@ export function CTAFinal() {
           <h2 className="font-display text-3xl font-bold sm:text-4xl md:text-5xl">
             Faça parte desta transformação
           </h2>
-          <p className="mt-4 text-base opacity-90 sm:text-lg">
+          <p className="mt-4 text-base opacity-90">
             Entre em contato para conhecer nossos projetos, desenvolver parcerias institucionais ou apoiar iniciativas educacionais e sociais.
           </p>
         </div>

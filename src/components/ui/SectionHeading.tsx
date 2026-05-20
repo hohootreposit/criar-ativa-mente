@@ -19,7 +19,7 @@ export function SectionHeading({ eyebrow, title, description, align = "center" }
         {title}
       </h2>
       {description && (
-        <p className="mt-4 text-base text-muted-foreground sm:text-lg">{description}</p>
+        <p className="mt-4 text-base text-muted-foreground">{description}</p>
       )}
     </div>
   );

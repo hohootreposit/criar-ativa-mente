@@ -42,7 +42,7 @@ function Page() {
               </div>
             ))}
           </div>
-          <p className="mt-12 max-w-3xl text-muted-foreground sm:text-lg">
+          <p className="mt-12 max-w-3xl text-base text-muted-foreground">
             As propostas são construídas para tornar o processo de aprendizagem mais significativo, participativo e conectado à realidade dos estudantes.
           </p>
         </div>

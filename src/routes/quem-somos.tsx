@@ -35,7 +35,7 @@ function Page() {
       />
       <section className="bg-background py-20">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-          <p className="mx-auto max-w-4xl text-center text-muted-foreground sm:text-lg">
+          <p className="mx-auto max-w-4xl text-center text-base text-muted-foreground">
             Desenvolvemos programas voltados para escolas públicas e privadas, secretarias de educação, organizações sociais e iniciativas comunitárias. Trabalhamos com propostas que fortalecem o pensamento crítico, a criatividade, a autonomia e o desenvolvimento integral dos estudantes, preparando-os para os desafios sociais, culturais e profissionais do futuro.
           </p>
         </div>
