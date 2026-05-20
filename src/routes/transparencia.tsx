@@ -31,7 +31,7 @@ function Page() {
       />
       <section className="bg-background py-20">
         <div className="mx-auto max-w-5xl px-4 sm:px-6 lg:px-8">
-          <p className="text-muted-foreground sm:text-lg">
+          <p className="text-base text-muted-foreground">
             Nesta seção disponibilizamos informações institucionais, documentos, relatórios e materiais relacionados à transparência e à prestação de contas. Nosso compromisso é fortalecer relações baseadas em confiança, integridade e impacto positivo.
           </p>
           <div className="mt-12 grid gap-6 sm:grid-cols-2">

@@ -43,7 +43,7 @@ function Page() {
               </li>
             ))}
           </ul>
-          <p className="mt-12 text-muted-foreground sm:text-lg">
+          <p className="mt-12 text-base text-muted-foreground">
             Cada projeto é desenvolvido com foco em resultados concretos, participação ativa e construção coletiva.
           </p>
         </div>
